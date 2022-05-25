@@ -1,0 +1,73 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: Montserrat;
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 6940px;
+    background-color: #EDF2F4;
+}
+
+/* Header */
+.header .first_head {
+    height: 50px;
+    background-color: #2B2D42;
+    color: #fff;
+}
+
+.header .first_head p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    letter-spacing: 6px;
+    padding-top: 16px;
+}
+
+.header .second_head {
+    padding-top: 50px;
+    height: 75px;
+    background-color: #D90429;
+}
+
+/* Body */
+.body .slideShow {
+    height: 700px;
+    padding-top: 125px;
+    background-color: #DC314F;
+}
+
+.body .popular {
+    height: 750px;
+    background-color: #ffff00; /* xóa đi sau */
+}
+
+.body .size_banner {
+    height: 580px;
+    background-color: #DC314F;
+}
+
+.body .three_banner {
+    height: 624px;
+    background-color: rgba(217, 217, 217, 0.3) ;
+}
+
+.body .feedback {
+    height: 375px;
+    background-color: #DC314F;
+}
+
+.body .picture {
+    height: 960px;
+    background-color: aqua; /* xóa đi sau */
+}
+
+/* Footer */
+.footer {
+    height: 576px;
+    background-color: black; /* xóa đi sau */
+}
