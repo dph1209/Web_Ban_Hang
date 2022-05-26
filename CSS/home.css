@@ -6,21 +6,34 @@
     font-family: Montserrat;
 }
 
-.wrap {
-    position: relative;
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
     width: 100%;
-    height: 6940px;
-    background-color: #EDF2F4;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
 }
 
 /* Header */
-.header .first_head {
-    height: 50px;
-    background-color: #2B2D42;
-    color: #fff;
+#header {
+    height: 125px;
+    width: 100%;
 }
 
-.header .first_head p{
+#header .first_head {
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background: #2B2D42;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#header .first_head p{
     font-weight: 500;
     font-size: 16px;
     line-height: 19.5px;
@@ -28,46 +41,117 @@
     padding-top: 16px;
 }
 
-.header .second_head {
-    padding-top: 50px;
+#header .navbar-header {
+    padding-left: 4%;
+}
+
+#header .navbar-brand img {
+    width: 95px;
+}
+
+#header .navbar {
+    background: #D90429;
+    background-image: none;
+}
+
+#header .navbar,
+#header .container-fluid,
+#header #navbarNav{
     height: 75px;
-    background-color: #D90429;
 }
 
-/* Body */
-.body .slideShow {
+#header #navbarNav ul li a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 25px;
+    text-transform: uppercase;
+}
+
+#header #navbarNav .dropdown-menu a {
+    color: #000;
+}
+
+#header .navbar-search {
+    padding-right: 20px;
+}
+
+/* Content */
+#content .slideShow {
     height: 700px;
-    padding-top: 125px;
-    background-color: #DC314F;
+    background: #DC314F;
 }
 
-.body .popular {
+#content .popular {
+    width: 100%;
+    background: #EDF2F4;
+}
+
+#content .wrap {
+    width: 1315px;
     height: 750px;
-    background-color: #ffff00; /* xóa đi sau */
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 135px;
 }
 
-.body .size_banner {
+#content .heading,
+#content .sub-heading {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#content .heading {
+    padding-bottom: 2px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+#content .sub-heading {
+    margin: 0;
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#content .card {
+    background: #505263;
+}
+
+#content .card-deck img{
+    height: 100%; 
+    width: 100%;
+}
+
+#content .card-img-overlay {
+    text-align: center;
+    top: 348px;
+    left: 40px;
+    right: 40px;
+    bottom: 42px;
+}
+
+#content .card-img-overlay a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+#content .cal-size {
     height: 580px;
-    background-color: #DC314F;
 }
 
-.body .three_banner {
-    height: 624px;
-    background-color: rgba(217, 217, 217, 0.3) ;
+#content .three-banner {
+    height: 625px;
 }
 
-.body .feedback {
+#content .feedback {
     height: 375px;
-    background-color: #DC314F;
 }
 
-.body .picture {
+#content .picture {
     height: 960px;
-    background-color: aqua; /* xóa đi sau */
-}
-
-/* Footer */
-.footer {
-    height: 576px;
-    background-color: black; /* xóa đi sau */
 }

@@ -5,53 +5,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="\CSS\home.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Web bán hàng</title>
 </head>
 
 <body>
-    <div class="wrap">
-        <div class="header">
-            <div class="first_head text-uppercase text-center" >
+    <div id="wrapper">
+        <div id="header">
+            <div class="first_head">
                 <p>Giảm 5% cho  đơn hàng trị giá lên đến 1.000.000 VNĐ</p>
             </div>
-            <div class="second_head">
-
+            <div class="navbar navbar-expand-lg justify-content-center">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#link" aria-label="Home Page"><img src="/Image/Trắng@4x.png"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>                    
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#link">Trang chủ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Sản phẩm
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="#">Quần áo</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Đồ lót</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Tất vớ</a>
+                                </div>
+                              </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#link">Hỗ trợ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#link">Liên lạc</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#link">Về chúng tôi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-search">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+                    <div class="navbar-icons">
+                        <a class="navbar-brand" href="#link" aria-label="Cart"><img src="/Image/Heart.png" style="height: 24px; width: 24px;"></a>
+                        <a class="navbar-brand" href="#link" aria-label="Cart"><img src="/Image/shopping bag.png" style="height: 24px; width: 24px;"></a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="body">
+        <div id="content">
             <div class="slideShow">
 
             </div>
             <div class="popular">
-
+                <div class="wrap">
+                    <h2 class="heading">Sản phẩm được yêu thích nhất</h2>
+                    <p class="sub-heading">Sản phẩm bán chạy nhất</p>
+                    <div class="card-deck">
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="size_banner">
+            <div class="cal-size">
 
             </div>
             <div class="popular">
-
+                <div class="wrap">
+                    <h2 class="heading">Sản phẩm được yêu thích nhất</h2>
+                    <p class="sub-heading">Sản phẩm bán chạy nhất</p>
+                    <div class="card-deck">
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="three_banner">
+            <div class="three-banner">
 
             </div>
             <div class="popular">
-
+                <div class="wrap">
+                    <h2 class="heading">Sản phẩm được yêu thích nhất</h2>
+                    <p class="sub-heading">Sản phẩm bán chạy nhất</p>
+                    <div class="card-deck">
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="feedback">
 
             </div>
             <div class="popular">
-
+                <div class="wrap">
+                    <h2 class="heading">Sản phẩm được yêu thích nhất</h2>
+                    <p class="sub-heading">Sản phẩm bán chạy nhất</p>
+                    <div class="card-deck">
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                        <div class="card" style="height: 440px; width: 290px;">
+                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
+                            <div class="card-img-overlay">
+                              <a href="#" class="btn btn">Xem ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="picture">
-                
-            </div>
-        </div>
-        <div class="footer">
 
+            </div>
         </div>
     </div>
 </body>
