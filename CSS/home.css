@@ -2,20 +2,22 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font-family: Montserrat;
+    box-sizing: border-box;
 }
 
-html, body{
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
+*::before, *::after {
+    box-sizing: inherit;
 }
 
 img {
+    display: block;
     max-width: 100%;
+}
+
+html, body{
+    min-height: 100%;
+    font-size: 100%;
+    font-family: Montserrat, sans-serif;
 }
 
 /* Header */
@@ -36,7 +38,7 @@ img {
 #header .first_head p{
     font-weight: 500;
     font-size: 16px;
-    line-height: 19.5px;
+    line-height: 20px;
     letter-spacing: 6px;
     padding-top: 16px;
 }
@@ -50,8 +52,7 @@ img {
 }
 
 #header .navbar {
-    background: #D90429;
-    background-image: none;
+    background: #D90429 none;
 }
 
 #header .navbar,
