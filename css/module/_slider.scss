@@ -1,0 +1,21 @@
+.slider {
+  @include size-setting(100%, 70rem);
+  position: relative;
+  background: $slide-bg;
+
+  &__nav {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    display: flex;
+    gap: 0 3rem;
+    margin: 0 auto;
+    transform: translateX(-50%);
+
+    &-dot {
+      @include size-setting(2rem);
+      border-radius: 100rem;
+      background: $black;
+    }
+  }
+}

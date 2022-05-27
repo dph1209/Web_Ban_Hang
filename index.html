@@ -1,223 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Website bán hàng</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__alert">
+        <p class="header__alert-content">
+          GIẢM 5% CHO ĐƠN HÀNG TRỊ GIÁ TRÊN 1.000.000 VNĐ
+        </p>
+      </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="\CSS\home.css">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>Web bán hàng</title>
-</head>
+      <div class="header__nav">
+        <div class="container header__nav-container">
+          <div class="header__hamburger">
+            <span class="header__hamburger-line full"></span>
+            <span class="header__hamburger-line half"></span>
+            <span class="header__hamburger-line full"></span>
+          </div>
 
-<body>
-    <div id="wrapper">
-        <div id="header">
-            <div class="first_head">
-                <p>Giảm 5% cho  đơn hàng trị giá lên đến 1.000.000 VNĐ</p>
+          <div class="header__menu">
+            <div class="header__menu-search icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20Z"
+                  stroke="#F2F2F2"
+                />
+                <path d="M22 21.9999L18.7823 18.7822" stroke="#F2F2F2" />
+              </svg>
             </div>
-            <div class="navbar navbar-expand-lg justify-content-center">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#link" aria-label="Home Page"><img src="/Image/Trắng@4x.png"></a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>                    
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#link">Trang chủ</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  Sản phẩm
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Quần áo</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Đồ lót</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Tất vớ</a>
-                                </div>
-                              </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#link">Hỗ trợ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#link">Liên lạc</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#link">Về chúng tôi</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="navbar-search">
-                        <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        </form>
-                    </div>
-                    <div class="navbar-icons">
-                        <a class="navbar-brand" href="#link" aria-label="Cart"><img src="/Image/Heart.png" style="height: 24px; width: 24px;"></a>
-                        <a class="navbar-brand" href="#link" aria-label="Cart"><img src="/Image/shopping%20bag.png" style="height: 24px; width: 24px;"></a>
-                    </div>
-                </div>
+
+            <div class="header__menu-favourite icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.77216 3.77216C0.40928 6.13503 0.409282 9.96602 2.77216 12.3289L11.937 21.4937L12 21.4307L12.0631 21.4938L21.2279 12.329C23.5908 9.96609 23.5908 6.13511 21.2279 3.77223C18.865 1.40936 15.034 1.40936 12.6712 3.77224L12.3536 4.08978C12.1584 4.28505 11.8418 4.28505 11.6465 4.08978L11.3289 3.77216C8.96601 1.40928 5.13503 1.40928 2.77216 3.77216Z"
+                  stroke="#F2F2F2"
+                />
+              </svg>
             </div>
+
+            <div class="header__menu-cart icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.49594 23.28L4.31166 6.7207H20.659L21.4747 23.28H3.49594Z"
+                  stroke="#F2F2F2"
+                />
+                <path
+                  d="M8.1604 10.1491L8.1604 5.55139C8.1604 4.40438 8.61605 3.30434 9.42711 2.49328C10.2382 1.68221 11.3382 1.22656 12.4852 1.22656C13.6322 1.22656 14.7323 1.68221 15.5433 2.49328C16.3544 3.30434 16.8101 4.40438 16.8101 5.55139V10.1491"
+                  stroke="#F2F2F2"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
-        <div id="content">
-            <div class="slideShow">
+      </div>
+    </header>
 
-            </div>
-            <div class="popular">
-                <div class="wrap">
-                    <h2 class="heading">Sản phẩm được yêu thích nhất</h2>
-                    <p class="sub-heading">Sản phẩm bán chạy nhất</p>
-                    <div class="card-deck">
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cal-size">
+    <section class="slider">
+      <div class="slider__nav">
+        <div class="slider__nav-dot"></div>
+        <div class="slider__nav-dot"></div>
+        <div class="slider__nav-dot"></div>
+      </div>
+    </section>
 
-            </div>
-            <div class="popular">
-                <div class="wrap">
-                    <h2 class="heading">Sản phẩm được yêu thích nhất</h2>
-                    <p class="sub-heading">Sản phẩm bán chạy nhất</p>
-                    <div class="card-deck">
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="three-banner">
-
-            </div>
-            <div class="popular">
-                <div class="wrap">
-                    <h2 class="heading">Sản phẩm được yêu thích nhất</h2>
-                    <p class="sub-heading">Sản phẩm bán chạy nhất</p>
-                    <div class="card-deck">
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="feedback">
-
-            </div>
-            <div class="popular">
-                <div class="wrap">
-                    <h2 class="heading">Sản phẩm được yêu thích nhất</h2>
-                    <p class="sub-heading">Sản phẩm bán chạy nhất</p>
-                    <div class="card-deck">
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                        <div class="card" style="height: 440px; width: 290px;">
-                            <img class="card-img" src="/Image/Product/sọc.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                              <a href="#" class="btn btn">Xem ngay</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="picture">
-
-            </div>
+    <section class="showcase">
+      <div class="container">
+        <div class="showcase__title">
+          <h2 class="showcase__title-content">SẢN PHẨM ĐƯỢC YÊU THÍCH NHẤT</h2>
+          <p class="showcase__title-subcontent">SẢN PHẨM BÁN CHẠY NHẤT</p>
         </div>
-    </div>
-</body>
 
+        <div class="showcase__content">
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner"></section>
+
+    <section class="showcase">
+      <div class="container">
+        <div class="showcase__title">
+          <h2 class="showcase__title-content">SẢN PHẨM ĐƯỢC YÊU THÍCH NHẤT</h2>
+          <p class="showcase__title-subcontent">SẢN PHẨM BÁN CHẠY NHẤT</p>
+        </div>
+
+        <div class="showcase__content">
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner"></section>
+
+    <section class="showcase">
+      <div class="container">
+        <div class="showcase__title">
+          <h2 class="showcase__title-content">SẢN PHẨM ĐƯỢC YÊU THÍCH NHẤT</h2>
+          <p class="showcase__title-subcontent">SẢN PHẨM BÁN CHẠY NHẤT</p>
+        </div>
+
+        <div class="showcase__content">
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner"></section>
+
+    <section class="showcase">
+      <div class="container">
+        <div class="showcase__title">
+          <h2 class="showcase__title-content">SẢN PHẨM ĐƯỢC YÊU THÍCH NHẤT</h2>
+          <p class="showcase__title-subcontent">SẢN PHẨM BÁN CHẠY NHẤT</p>
+        </div>
+
+        <div class="showcase__content">
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img">
+              <img
+                src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387"
+                alt=""
+              />
+            </div>
+
+            <div class="card__info">
+              <p class="card__info-title">INVISIBLE INSIDE-OUT</p>
+              <p class="card__info-price">1.299.000₫</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
