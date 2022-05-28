@@ -19,7 +19,7 @@ html,
 body {
     min-height: 100%;
     font-size: 100%;
-    font-family: Montserrat, sans-serif;
+    font-family: Montserrat;
 }
 
 /* Header */
@@ -150,6 +150,7 @@ body {
 
 #content .three-banner {
     height: 625px;
+    background: rgba(217, 217, 217, 0.3);
 }
 
 #content .three-banner .first-banner {
