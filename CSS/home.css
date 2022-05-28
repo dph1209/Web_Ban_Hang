@@ -1,11 +1,12 @@
-*{ 
+* {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-*::before, *::after {
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -14,7 +15,8 @@ img {
     max-width: 100%;
 }
 
-html, body{
+html,
+body {
     min-height: 100%;
     font-size: 100%;
     font-family: Montserrat, sans-serif;
@@ -35,7 +37,7 @@ html, body{
     text-align: center;
 }
 
-#header .first_head p{
+#header .first_head p {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -57,11 +59,11 @@ html, body{
 
 #header .navbar,
 #header .container-fluid,
-#header #navbarNav{
+#header #navbarNav {
     height: 75px;
 }
 
-#header #navbarNav ul li a{
+#header #navbarNav ul li a {
     color: #fff;
     font-size: 15px;
     font-weight: 500;
@@ -122,8 +124,8 @@ html, body{
     background: #505263;
 }
 
-#content .card-deck img{
-    height: 100%; 
+#content .card-deck img {
+    height: 100%;
     width: 100%;
 }
 
@@ -143,16 +145,197 @@ html, body{
 
 #content .cal-size {
     height: 580px;
+    background: #DC314F;
 }
 
 #content .three-banner {
     height: 625px;
 }
 
+#content .three-banner .first-banner {
+    height: 200px;
+    background: #DC314F;
+}
+
+#content .three-banner .second-banner {
+    height: 400px;
+    margin-top: 25px;
+}
+
+#content .three-banner .second-banner .left-banner {
+    background: #DC314F;
+    width: 940px;
+    height: 400px;
+    float: left;
+    margin-right: 23px;
+}
+
+#content .three-banner .second-banner .right-banner {
+    background: #DC314F;
+    width: 940px;
+    height: 400px;
+    float: left;
+}
+
 #content .feedback {
     height: 375px;
+    background: #DC314F;
 }
 
 #content .picture {
     height: 960px;
+}
+
+#content .picture .row {
+    width: 1903px;
+}
+
+#content .picture .col {
+    width: 480px;
+    height: 480px;
+    background: #505263;
+    border: 1px solid #000000;
+}
+
+/* Footer */
+#footer {
+    height: 380px;
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+#footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+#footer hr.small {
+    margin: 20px 0
+}
+
+#footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+#footer a {
+    color: #737373;
+}
+
+#footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+#footer .social-icons {
+    text-align: right
+}
+
+#footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
 }
