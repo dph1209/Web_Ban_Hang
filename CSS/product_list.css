@@ -133,22 +133,13 @@ body {
 }
 
     /* Product */
-#content .info h2{
-    font-weight: 400;
-    font-size: 24px;
-    text-align: center;
-}
-
-#content .info .img-list-3 {
-    display: inline;
-    width: 275px;
-    height: 3px;
-}
-
 #content .col-lg-9 .row {
-    margin-top: 57px;
     margin-left: 0;
     margin-right: 0;
+}
+
+#content .col-lg-9 .first-row {
+    margin: 0;
 }
 
 #content .row .card {
