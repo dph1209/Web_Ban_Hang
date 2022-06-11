@@ -1,0 +1,61 @@
+/* Content */
+#content .product {
+    background: #edf2f4;
+    width: 100%;
+}
+
+#content .wrap-product {
+    height: 1140px;
+    width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 135px;
+    padding-bottom: 145px;
+}
+
+#content .popular {
+    width: 100%;
+    background: #edf2f4;
+}
+
+#content .wrap {
+    width: 1315px;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 135px;
+}
+
+#content .heading {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+#content .card {
+    background: #505263;
+}
+
+#content .card-deck img {
+    height: 100%;
+    width: 100%;
+}
+
+#content .card-img-overlay {
+    text-align: center;
+    top: 348px;
+    left: 40px;
+    right: 40px;
+    bottom: 42px;
+}
+
+#content .card-img-overlay a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}

@@ -80,13 +80,13 @@
 #content .three-banner .second-banner {
   height: 400px;
   margin-top: 25px;
+  display: inline-flex;
 }
 
 #content .three-banner .second-banner .left-banner {
   background: #dc314f;
   width: 940px;
   height: 400px;
-  float: left;
   margin-right: 23px;
 }
 
@@ -94,7 +94,6 @@
   background: #dc314f;
   width: 940px;
   height: 400px;
-  float: left;
 }
 
 #content .feedback {
